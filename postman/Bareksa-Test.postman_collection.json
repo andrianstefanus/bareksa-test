@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "722151b0-0139-4aca-b81c-54c4ba52f36c",
+		"name": "Bareksa-Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "News - Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Testing News 2\",\r\n    \"topicID\" : \"TO2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5074/news/add",
+					"host": [
+						"localhost"
+					],
+					"port": "5074",
+					"path": [
+						"news",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "News - Update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"N4\",\r\n    \"name\" : \"Testing News 1 - Edited\",\r\n    \"topicID\" : \"TO2\",\r\n    \"status\" : \"P\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5074/news/update",
+					"host": [
+						"localhost"
+					],
+					"port": "5074",
+					"path": [
+						"news",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "News - Remove",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"N4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5074/news/remove",
+					"host": [
+						"localhost"
+					],
+					"port": "5074",
+					"path": [
+						"news",
+						"remove"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "News - List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"newsID\": \"N2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5074/tags/list",
+					"host": [
+						"localhost"
+					],
+					"port": "5074",
+					"path": [
+						"tags",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tag - List",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\": [\r\n        \"X\"\r\n    ],\r\n    \"topics\": [\r\n        \"TO2\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5074/news/list",
+					"host": [
+						"localhost"
+					],
+					"port": "5074",
+					"path": [
+						"news",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tag - Add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"newsID\": \"N2\",\r\n    \"id\": \"TG2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5074/tags/add",
+					"host": [
+						"localhost"
+					],
+					"port": "5074",
+					"path": [
+						"tags",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tag - Remove",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"newsID\": \"N2\",\r\n    \"id\": \"TG2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5074/tags/remove",
+					"host": [
+						"localhost"
+					],
+					"port": "5074",
+					"path": [
+						"tags",
+						"remove"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
